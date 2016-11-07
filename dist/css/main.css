@@ -1,0 +1,86 @@
+section {
+  background-color: #f5f5f5;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  section::after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: ''; }
+  section div {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left; }
+    section div header {
+      margin: 0 auto;
+      width: 400px;
+      color: #004e8d; }
+      section div header svg {
+        width: 120px;
+        height: 120px;
+        float: left;
+        margin-right: 20px; }
+      section div header h1 {
+        font: 57px Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        padding-top: 10px; }
+      section div header h3 {
+        font: 32px Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-top: -57px; }
+    section div form {
+      margin: 0 auto; }
+      section div form fieldset {
+        background-color: #fff;
+        border: 2px solid #f1f1f1;
+        border-radius: 4px;
+        margin-top: 54px;
+        margin-left: -10px;
+        padding: 0px 32px 21px 32px; }
+        section div form fieldset:hover {
+          box-shadow: 0 0 4px 4px #ccc;
+          transition: 1s; }
+        section div form fieldset label {
+          display: block;
+          color: #5d5d5d;
+          font: 24px Arial, Helvetica, sans-serif;
+          padding-top: 2px; }
+        section div form fieldset input {
+          margin-top: 6px;
+          width: 595px;
+          height: 65px;
+          border: 2px solid #f1f1f1;
+          border-radius: 2px; }
+          section div form fieldset input:focus {
+            border-color: #39c; }
+        section div form fieldset input[type="submit"] {
+          background-color: #ed008e;
+          margin-top: 19px;
+          width: 224px;
+          border-radius: 60px;
+          color: #fff;
+          text-transform: uppercase;
+          font: 21px Arial, Helvetica, sans-serif;
+          letter-spacing: 1.7px;
+          padding-top: 3px;
+          padding-right: 5px; }
+        section div form fieldset a {
+          float: right;
+          color: #959595;
+          font: 24px Arial, Helvetica, sans-serif;
+          margin-top: -65px; }
+    section div footer {
+      color: #959595;
+      font: 24px Arial, Helvetica, sans-serif;
+      width: 100%; }
+      section div footer p {
+        padding-top: 16px;
+        margin-left: -8px;
+        text-align: center; }
+        section div footer p a {
+          color: #959595; }

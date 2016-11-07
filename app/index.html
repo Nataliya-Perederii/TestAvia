@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Swedavia</title>
+	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <section>
+		<div>
+      <header>
+        <svg width="120" height="120">
+          <circle cx="60" cy="60" r="60" fill="#ccc" />
+        </svg>
+        <h1>swedavia</h1>
+        <h3>swedish airports</h3>
+      </header>
+		  <form method="post" action="">
+        <fieldset>
+	        <p>
+	          <label for="email">Username</label>
+	          <input type="email" name="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
+	        </p>
+	        <p>
+	          <label for="password">Password</label>
+	          <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра" />
+	        </p>
+	        <p>
+	          <input type="submit" value="Отправить" />
+	        </p>
+	        <p>
+	          <a href="#">Forgot password?</a>
+	        </p>
+	      </fieldset>
+      </form>
+      <footer>
+	      <p>Powered by <a href="#">Cygate</a></p>
+	    </footer>
+    </div>
+  </section>
+
+	<script type="text/javascript" src="js/libs.min.js" ></script>
+	<script type="text/javascript" src="js/common.js" ></script>
+</body>
+</html>

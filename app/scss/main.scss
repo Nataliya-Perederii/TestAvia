@@ -1,0 +1,113 @@
+$width: 120px;
+$arial: Arial, Helvetica, sans-serif;
+$fontSize: 24px $arial;
+$white: #fff;
+$grayLight: #ccc;
+$gray: #959595;
+$bold: bold;
+$border: 2px solid #f1f1f1;
+
+section {
+  background-color: #f5f5f5;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  &::after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: '';
+  }
+  div {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    header {
+      margin: 0 auto;
+      width: 400px;
+      color: #004e8d;
+      svg {
+        width: $width;
+        height: $width;
+        float: left;
+        margin-right: 20px;
+      }
+      h1 {
+        font: 57px $arial;
+        font-weight: $bold;
+        padding-top: 10px;
+      }
+      h3 {
+        font: 32px $arial;
+        font-weight: $bold;
+        margin-top: -57px;
+      }
+    }
+    form {
+      margin: 0 auto;
+      fieldset {
+        background-color: $white;
+        border: $border;
+        border-radius: 4px;
+        margin-top: 54px;
+        margin-left: -10px;
+        padding: 0px 32px 21px 32px;
+        &:hover {
+          box-shadow: 0 0 4px 4px $grayLight;
+          transition: 1s;
+        }
+        label {
+          display: block;
+          color: #5d5d5d;
+          font: $fontSize;
+          padding-top: 2px;
+        }
+        input {
+          margin-top: 6px;
+          width: 595px;
+          height: 65px;
+          border: $border;
+          border-radius: 2px;
+          &:focus {
+            border-color: #39c
+          }
+        }
+        input[type="submit"] {
+          background-color: #ed008e;
+          margin-top: 19px;
+          width: 224px;
+          border-radius: $width/2;
+          color: $white;
+          text-transform: uppercase;
+          font: 21px $arial;
+          letter-spacing: 1.7px;
+          padding-top: 3px;
+          padding-right: 5px;
+        }
+        a {
+          float: right;
+          color: $gray;
+          font: $fontSize;
+          margin-top: -65px;
+        }
+      }
+    }
+    footer {
+      color: $gray;
+      font: $fontSize;
+      width: 100%;
+      p {
+        padding-top: 16px;
+        margin-left: -8px;
+        text-align: center;
+        a {
+          color: $gray;
+        }
+      }
+    }
+  }
+}
